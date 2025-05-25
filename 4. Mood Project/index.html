@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Mood Journal</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class="container">
+        <h1>My Mood Journal</h1>
+
+        <div class="mood-input-section">
+            <div class="current-date" id="current-date"></div>
+
+            <div class="mood-selector">
+                <span class="mood-option" data-mood="happy">😊 Happy</span>
+                <span class="mood-option" data-mood="neutral">😐 Neutral</span>
+                <span class="mood-option" data-mood="sad">😔 Sad</span>
+                <span class="mood-option" data-mood="angry">😡 Angry</span>
+                <span class="mood-option" data-mood="anxious">😟 Anxious</span>
+            </div>
+
+            <textarea id="journal-text" placeholder="What's on your mind today?"></textarea>
+
+            <button id="save-entry-btn">Save Entry</button>
+        </div>
+
+        <div class="mood-entries-section">
+            <h2>Past Entries</h2>
+            <div id="mood-entries-list">
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
